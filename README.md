@@ -17,7 +17,7 @@ This script converts Unity materials to Godot materials and creates scene files 
                                     /Textures/
    ```
    Copy this entire folder structure (excluding the Materials folder) to your Godot project, maintaining the same hierarchy.
-   **Make sure to open the project so the files get imported before proceeding**
+   **Make sure to open the project in the Godot editor so the files get imported before proceeding**
 
 2. Install the required Python dependencies:
    ```bash
@@ -98,3 +98,5 @@ Vegetation Assets/
 - Materials will be converted to Godot's StandardMaterial3D format
 - Scene files (.tscn) will be created with proper material assignments
 - Original FBX files must be imported into Godot before using the generated scenes
+- Only works with .fbx files, not .gltf   -If you ask I might be able to do something about that :P
+- If your textures are .psd files (like in my case), the program will assume you converted them to .png since .psd is not supported in Godot
